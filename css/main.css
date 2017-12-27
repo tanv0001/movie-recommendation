@@ -1,0 +1,162 @@
+/**********************************
+DEFAULTS
+**********************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: cursive;
+}
+
+/**********************************
+LAYOUT
+**********************************/
+
+h1{
+    text-align: 10remr;
+    width:10rem;
+    color:blue;
+    
+}
+
+.page {
+   display:none;
+    background-color:lightskyblue;
+}
+
+.page.active {
+    display:block;
+    
+
+}
+
+
+.not {
+    display: none;
+    color: blue;
+}
+
+
+/**********************************
+SEARCH BAR
+**********************************/
+
+.search {
+    position: absolute;
+    height: 2rem;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    margin-left: 2rem;
+
+}
+
+.backBtn {
+    width: 2rem;
+    height: 3rem;
+    z-index: 500;
+    display:block;
+    float: left;
+    background-color: white;
+}
+
+#search-button {
+    position: absolute;
+    top: 1rem;
+    z-index: 120;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+#search-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    height: 3rem;
+    width: 100%;
+    background-color:white;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: 5%;
+    border-color: darkblue;
+}
+
+
+
+/**********************************
+SEARCH RESULTS
+**********************************/
+
+.movie {
+    border: 3px solid darkblue;
+    padding: 1rem;
+    overflow: auto;
+    clear: both;
+    margin:2rem;
+    
+}
+
+.poster {
+    border:100%;
+    border: 5%;
+    float: left;
+    background-color: lightskyblue;
+    width: 150px;
+    height: 7.3rem;
+    /* min-height:150px;*/
+    margin: 0 1rem 1rem 0;
+}
+
+.movie-title {
+    font-size: 2.5rem;
+    color: white;
+    background-color:darkblue;
+}
+
+movie-desc {
+    font-size: 40rem;
+    color: blue;
+}
+
+.attribution {
+    display: block;
+    margin-top: 6rem;
+    margin-left: 35%;
+
+
+}
+
+.attribution img {
+    width: 40%;
+    margin-top: 6rem;
+
+
+
+    /*
+animation-name:spin;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+animation-duration: 2s;
+*/
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
