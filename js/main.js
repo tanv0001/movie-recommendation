@@ -1,8 +1,8 @@
 //search ->basdeurl + "search/movie?api_key"=<KEY>&query=<search words>
 //recommended ->baseurl + "movie/" + <movie_id> "recommendations?api_key=" +<KEY> ++ "&language=en=US"
 let app = {
-    URL: 'http://api.themoviedb.org./3/',
-    imgURL: 'http://image.tmdb.org/t/p/w500/',
+    URL: 'https://api.themoviedb.org./3/',
+    imgURL: 'https://image.tmdb.org/t/p/w500/',
     init: function () {
         //focus on the text field 
         let input = document.getElementById('search-input');
